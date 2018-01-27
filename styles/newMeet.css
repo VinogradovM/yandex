@@ -233,8 +233,77 @@ form > div {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 412px) {
-	.left{
-		border: 2px solid red;
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	.head {
+		height: 50px;
+		width: 360px;
+		padding-left: 16px;
+	}
+	.main {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 360px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	form{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 360px;
+	}
+	.block {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 328px;
+		margin: 0px 16px;
+	}
+	.left {
+		height: 210px;
+	}
+	.right {
+		height: 260px;
+	}
+	.close {
+		display: none;
+	}
+	.topicConversation .topic {
+		width: 320px;
+	}
+
+	.participants .styled-select {
+		width: 326px;
+	}
+	.meets {
+		width: 328px;
+		padding-bottom: 16px;
+	}
+	.reservationDate {
+		flex-wrap: wrap;
+		height: 100px;
+	}
+	.reservationDate .one .date {
+		width: 320px;
+	}
+	.reservationDate .two{
+		width: 153px;
+	}
+	.reservationDate .three{
+		width: 153px;
+	}
+
+	.reservationDate .two input{
+		width: 153px;
+	}
+	.reservationDate .three input{
+		width: 153px;
+	}
+	.cancel {
+		display: none;
 	}
 }
